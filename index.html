@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- here we are creating a button to open the modal -->
+    <button onclick="document.getElementById('modal-wrapper').style.display='block'">Sign Up</button>
+    <!-- next we will be creating the sign up form -->
+    <div id="modal-wrapper" class="modal">
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                <h1 style="text-align:center">Sign Up</h1>
+            </div>
+            <div class="container">
+                <input type="text" placeholder=" First name" name="firstname" required>
+                <input type="text" placeholder="Last name" name="lastname" required>
+                <input type="phone" placeholder="phone number" name="numbers" required>
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+</body>
+</html>
