@@ -7,12 +7,13 @@
 </head>
 <body>
     <!-- here we are creating a button to open the modal -->
-    <button onclick="document.getElementById('modal-wrapper').style.display='block'">Sign Up</button>
+    <button onclick="document.getElementById('signup').style.display='block'">Sign Up</button>
+    <button onclick=" document.getElementById('profile').style.display='block'">Search profile</button>
     <!-- next we will be creating the sign up form -->
-    <div id="modal-wrapper" class="modal">
+    <div id="signup" class="modal">
         <form class="modal-content animate" action="/action_page.php">
             <div class="imgcontainer">
-                <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                <span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close PopUp">&times;</span>
                 <h1 style="text-align:center">Sign Up</h1>
             </div>
             <div class="container">
@@ -22,5 +23,17 @@
                 <button type="submit">Sign Up</button>
             </div>
         </form>
+        <!-- here we will be adding the function for the search profile -->
+        <div id="profile" class="test">
+            <form class="modal-content animate" action="/action_page.php">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('profile').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                    <h1 style="text-align:center">Search Profile</h1>
+                </div>
+                <div class="container">
+                    <input type="text" placeholder="Enter the phone number" name="phone" required>
+                    <button type="submit">Search</button>
+                </div>
+            </form>
 </body>
 </html>
