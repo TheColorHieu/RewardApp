@@ -1,6 +1,5 @@
-// document.getElementById("signup").addEventListener("click", function() {
-//     document.getElementById("signup").style.display = "none";
-// });
-// document.getElementById("closeSignup").addEventListener("click", function() {
-//     document.getElementById("signup").style.display = "none";
-// });
+document.getElementById("signup").addEventListener("click", function() {
+    console.log("signup clicked");
+});
+document.getElementById("closeSignup").addEventListener("click", function() {
+});
